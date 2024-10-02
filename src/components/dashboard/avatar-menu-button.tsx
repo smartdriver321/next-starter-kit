@@ -30,6 +30,7 @@ export function AvatarMenuButton({ session }: { session: Session }) {
 	const user = session.user
 	const initials = getInitials(user.name ?? '')
 	const router = useRouter()
+
 	async function handleLogout() {
 		try {
 			await signOut()
@@ -38,6 +39,7 @@ export function AvatarMenuButton({ session }: { session: Session }) {
 			console.log(error)
 		}
 	}
+
 	const menuLinks = [
 		{
 			name: 'Settings',
@@ -154,11 +156,6 @@ export function AvatarMenuButton({ session }: { session: Session }) {
 						</div>
 					</div>
 				</div>
-				{/* <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter> */}
 			</SheetContent>
 		</Sheet>
 	)

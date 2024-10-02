@@ -13,8 +13,6 @@ import {
 } from 'lucide-react'
 
 import { ModeToggle } from '../mode-toggle'
-import { AvatarMenuButton } from './avatar-menu-button'
-import { Input } from '@/components/ui/input'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -25,6 +23,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card'
+import { Input } from '../ui/input'
 
 export default function Navbar({ session }: { session: Session }) {
 	return (
@@ -116,7 +115,6 @@ export default function Navbar({ session }: { session: Session }) {
 			</div>
 
 			<ModeToggle />
-			<AvatarMenuButton session={session} />
 		</header>
 	)
 }
