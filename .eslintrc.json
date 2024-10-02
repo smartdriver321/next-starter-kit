@@ -2,6 +2,7 @@
 	"extends": "next/core-web-vitals",
 	"rules": {
 		"no-undef": "error",
-		"no-unused-vars": "error"
+		"no-unused-vars": "error",
+		"no-duplicate-imports": "warn"
 	}
 }
